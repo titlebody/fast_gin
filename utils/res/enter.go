@@ -1,6 +1,7 @@
 package res
 
 import (
+	"fast_gin/utils/vaildate"
 	"github.com/gin-gonic/gin"
 )
 
@@ -41,5 +42,6 @@ func FailWithMsg(msg string, c *gin.Context) {
 }
 
 func FailWithError(err error, c *gin.Context) {
-	Fail(7, err.Error(), c)
+	msg := vaildate.ValidateError(err)
+	Fail(7, msg, c)
 }
