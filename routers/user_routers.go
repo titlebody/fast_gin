@@ -7,7 +7,7 @@ import (
 
 func (g RouterGroup) UserRouter() {
 	app := api.App.UserApi
-	g.POST("users/login", middleware.LimitMiddleware(1), app.LoginView)
+	g.POST("users/login", middleware.LimitMiddleware(3), app.LoginView)
 	g.GET("users", middleware.LimitMiddleware(10), middleware.AdminMiddleware, app.UserListView)
 
 }
