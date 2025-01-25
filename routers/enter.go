@@ -18,7 +18,9 @@ func Run() {
 
 	api := r.Group("/api")
 	routerGroup := RouterGroup{api}
+
 	routerGroup.UserRouter()
+	routerGroup.ImageRouter()
 
 	addr := global.Config.System.Addr()
 	if global.Config.System.Mode == "release" {

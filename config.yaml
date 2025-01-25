@@ -17,3 +17,12 @@ jwt:
     expires: 8   # 有效期单位小时
     issuer: chenxi   # 签发人
     key: angrinsss   # 密钥
+upload:
+    max_size: 2  # 最大上传文件大小
+    dir: "./images"
+    allow_ext:
+        - ".jpg"
+        - ".png"
+        - ".gif"
+        - ".jpeg"
+        - ".webp"

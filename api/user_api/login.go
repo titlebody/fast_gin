@@ -12,14 +12,14 @@ type LoginRequest struct {
 	Password string `json:"password" binding:"required" label:"密码"`
 }
 
-func ShowBindJson[T any](c *gin.Context) (cr T, err error) {
+/*func ShowBindJson[T any](c *gin.Context) (cr T, err error) {
 	err = c.ShouldBindJSON(&cr)
 	if err != nil {
 		res.FailWithError(err, c)
 		return
 	}
 	return
-}
+}*/
 
 func (UserApi) LoginView(c *gin.Context) {
 
