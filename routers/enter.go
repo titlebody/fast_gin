@@ -21,6 +21,7 @@ func Run() {
 
 	routerGroup.UserRouter()
 	routerGroup.ImageRouter()
+	routerGroup.CaptchaRouter()
 
 	addr := global.Config.System.Addr()
 	if global.Config.System.Mode == "release" {

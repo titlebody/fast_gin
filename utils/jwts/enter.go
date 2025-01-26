@@ -10,7 +10,7 @@ import (
 
 type Claims struct {
 	UserID uint `json:"user_id"`
-	RoleID uint `json:"role_id"`
+	RoleID int8 `json:"role_id"`
 }
 
 type MyClaims struct {

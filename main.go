@@ -15,7 +15,6 @@ func main() {
 	core.InitRedis()
 	flags.Run()
 
-	//
 	routers.Run()
 
 }

@@ -26,3 +26,6 @@ upload:
         - ".gif"
         - ".jpeg"
         - ".webp"
+site:
+    login:
+        captcha: true
